@@ -14,7 +14,6 @@ body {
 }
 
 header, nav, section, article {
-
 	margin-bottom: 10px;
 	margin-top: 10px;
 	padding: 20px;
@@ -23,28 +22,33 @@ header, nav, section, article {
 
 .container{	
  	overflow: auto;
+ 	width: 100%;
  	clear: both;
+ 	margin-bottom: 0px;
 }
 
-#section {
+.section {
 	float: left;
 	position: relative;
-	width: 470px;
-	height: 350px;
+	width: 495px;
+	height: 320px;
 	margin-right: 20px;
 }
 
-#aside {
-	float: left;
-	width: 470px;
-	height: 350px;
+.aside {
+	float: right;
+	width: 440px;
+	height: 320px;
 }
 
-#article {
+.article {
 	background: #777;
 	color: #ebebeb;
-	position: relative;
-	bottom: 0;
+	position: absolute;
+	text-align: center;
+	right: 20px;
+	left: 20px;
+	bottom: 10px;
 	
 }
 
@@ -54,17 +58,19 @@ h1, h2, h3 {
 	display: inline;
 }
 
-#heading, #paragraph{	
+.heading,.paragraph {
 	color: #777;
+	right: 20px;
+	left: 20px;
+	bottom: 10px;
 }
 
-.clear{
-	clear: both;
-}
+.clear{ clear: both; }
 
 footer {
 	clear: both;
 	padding: 20px;
+	margin-top: 20px;
 	background: #ebebeb;
 	margin-top: 10px;
 }
